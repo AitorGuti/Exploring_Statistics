@@ -1,0 +1,18 @@
+---
+title: "Exploring Statistics"
+author: "Aitor Alexander Gutierrez Valero"
+date: "2022-08-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Foundational Concepts of Statistics
+
+```{r}
+
+```
