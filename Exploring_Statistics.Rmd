@@ -2,7 +2,10 @@
 title: "Exploring Statistics"
 author: "Aitor Alexander Gutierrez Valero"
 date: "2022-08-16"
-output: html_document
+output: 
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +14,30 @@ library(tidyverse)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Foundational Concepts of Statistics
+## Foundational Concepts
+
+---
+
+### Population, Sample, and Sample Size
+
+<span style="color: black;">
+A population is a defined set of individuals, and a sample is a randomly selected sub-set of a population. For example: As of 2022, Spain has [4.7M](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=ultiDatos&idp=1254735572981) people. A sample of the Spanish population would be a random selection of 1 - to - 4.69M people in Spain.
+</span>
+
+<span style="color: black;">
+Sample size determines the accuracy of any data calculated from a sample. This accuracy can be split into two concepts:</span>
+
+<span style="color: black;">
+Confidence Level
+</span>
+
+    Certainty that our sample represents the population
+
+<span style="color: black;">
+Error Margin
+</span>
+
+    Certainty that our statistics reflect the population's views
 
 
 ```{r}
