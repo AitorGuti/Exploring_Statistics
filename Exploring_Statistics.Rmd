@@ -26,17 +26,17 @@ A population is a defined set of individuals, and a sample is a randomly selecte
 Sample size determines the accuracy of any data calculated from a sample. This accuracy can be split into two concepts:
 
 
-Confidence Level
+**Confidence Level -**
 
     Certainty that our sample represents the population
 
 
-Error Margin
+**Error Margin -**
 
     Certainty that our statistics reflect the population's views
 
 
-To further elaborate: We find that Spaniards weigh 70 kg on average with an error margin of 10% and a confidence level of 95%. The error margin means that the average Spaniard weighs somewhere between 63 and 77 kg, and the confidence level means that we are 95% sure that the average Spaniard weighs between 63 and 77 kg.
+To further elaborate: We find that the average weight of all Spaniards is 70 kg with an error margin of 10% and a confidence level of 95%. The error margin means that the weight is actually somewhere between 63 and 77 kg, and the confidence level means that we are 95% sure that the average is between 63 and 77 kg.
 
 
 Below is a table comparing the error margin and confidence level for different sample sizes of a population of 1 million people.
@@ -56,15 +56,57 @@ kable(sample_df)
 
 ---
 
+## Statistics vs. Parameters
+**Statistics -**
+
+    The calculated values from a sample
+
+**Parameters -**
+
+    The true values from a population (Calculable if your sample is the population)
+
+---
+
 ## Variable Types used in Statistics (Types of data)
 
 #### Qualitative (Categorical)
-Ordinal - An ordered set of variables: Always, frequently, sometimes, etc..
+**Ordinal -**
 
-Nominal - An unordered variable: Gender, Colour, Country, etc..
+    An ordered set of variables: Always, frequently, sometimes, etc.
+
+**Nominal -**
+
+    An unordered variable: Gender, Colour, Country, etc.
 
 #### Quantitative
-Continuous - Numerical: Infinite values like height and weight
+**Continuous -**
 
-Discrete - Numerical: Countable values like number of people or flowers
+    Numerical: Infinite values like height and weight
+
+**Discrete -**
+
+    Numerical: Countable values like number of people or flowers
+
+---
+
+## Three Types of Statistics Analysis
+
+Statistics analysis is used to interpret, represent, and extrapolate data and its various trends.
+
+
+### 1. Bias
+
+**Random Error -**
+
+     Uncontrollable error in measurement that varies randomly
+     For example: Value is between smallest increments; rounded up or down
+
+**Systematic Error -**
+
+    Error in measurement that skews values consistently
+    For example: Scale consistently measures too high by 1 kg.
+
+### 2. Descriptive Statistics
+
+
 
