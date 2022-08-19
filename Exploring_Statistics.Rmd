@@ -43,10 +43,19 @@ Error Margin
 To further elaborate: We find that Spaniards weigh 70 kg on average with an error margin of 10% and a confidence level of 95%. The error margin means that the average Spaniard weighs somewhere between 63 and 77 kg, and the confidence level means that we are 95% sure that the average Spaniard weighs between 63 and 77 kg.
 </span>
 
-Below is a table comparing sample size, error margin, and confidence level for a population of 1 million people.
-
-```{r, warning=FALSE}
-#Confidence levels of 90, 95, and 100
+<span style="color: black;">
+Below is a table comparing the error margin and confidence level for different sample sizes of a population of 1 million people.
+</span>
+```{r, echo=FALSE}
+#Confidence levels of 90, 95, and 99
 #Error margins of 15, 10, and 5
-#Sample Sizes of n/a
+#Sample Sizes of
+sample_size <- c(31, 97, 664, 16317)
+error_margin <- c(15, 10, 5, 1)
+confidence_level <- c(90, 95, 99, 99)
+
+sample_df <- data.frame(sample_size, error_margin, confidence_level)
+colnames(sample_df) <- c("Sample Size", "Error Margin", "Confidence Level")
+
+kable(sample_df)
 ```
