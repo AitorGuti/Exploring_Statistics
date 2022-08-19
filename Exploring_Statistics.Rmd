@@ -39,6 +39,14 @@ Error Margin
 
     Certainty that our statistics reflect the population's views
 
+<span style="color: black;">
+To further elaborate: We find that Spaniards weigh 70 kg on average with an error margin of 10% and a confidence level of 95%. The error margin means that the average Spaniard weighs somewhere between 63 and 77 kg, and the confidence level means that we are 95% sure that the average Spaniard weighs between 63 and 77 kg.
+</span>
 
-```{r}
+Below is a table comparing sample size, error margin, and confidence level for a population of 1 million people.
+
+```{r, warning=FALSE}
+#Confidence levels of 90, 95, and 100
+#Error margins of 15, 10, and 5
+#Sample Sizes of n/a
 ```
