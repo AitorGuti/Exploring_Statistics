@@ -14,38 +14,32 @@ library(tidyverse)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Foundational Concepts
+# Foundational Concepts
 
 ---
 
-### Population, Sample, and Sample Size
+## Population, Sample, and Sample Size
 
-<span style="color: black;">
+
 A population is a defined set of individuals, and a sample is a randomly selected sub-set of a population. For example: As of 2022, Spain has [4.7M](https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=ultiDatos&idp=1254735572981) people. A sample of the Spanish population would be a random selection of 1 - to - 4.69M people in Spain.
-</span>
 
-<span style="color: black;">
-Sample size determines the accuracy of any data calculated from a sample. This accuracy can be split into two concepts:</span>
+Sample size determines the accuracy of any data calculated from a sample. This accuracy can be split into two concepts:
 
-<span style="color: black;">
+
 Confidence Level
-</span>
 
     Certainty that our sample represents the population
 
-<span style="color: black;">
+
 Error Margin
-</span>
 
     Certainty that our statistics reflect the population's views
 
-<span style="color: black;">
-To further elaborate: We find that Spaniards weigh 70 kg on average with an error margin of 10% and a confidence level of 95%. The error margin means that the average Spaniard weighs somewhere between 63 and 77 kg, and the confidence level means that we are 95% sure that the average Spaniard weighs between 63 and 77 kg.
-</span>
 
-<span style="color: black;">
+To further elaborate: We find that Spaniards weigh 70 kg on average with an error margin of 10% and a confidence level of 95%. The error margin means that the average Spaniard weighs somewhere between 63 and 77 kg, and the confidence level means that we are 95% sure that the average Spaniard weighs between 63 and 77 kg.
+
+
 Below is a table comparing the error margin and confidence level for different sample sizes of a population of 1 million people.
-</span>
 ```{r, echo=FALSE}
 #Confidence levels of 90, 95, and 99
 #Error margins of 15, 10, and 5
@@ -59,3 +53,18 @@ colnames(sample_df) <- c("Sample Size", "Error Margin", "Confidence Level")
 
 kable(sample_df)
 ```
+
+---
+
+## Variable Types used in Statistics (Types of data)
+
+#### Qualitative (Categorical)
+Ordinal - An ordered set of variables: Always, frequently, sometimes, etc..
+
+Nominal - An unordered variable: Gender, Colour, Country, etc..
+
+#### Quantitative
+Continuous - Numerical: Infinite values like height and weight
+
+Discrete - Numerical: Countable values like number of people or flowers
+
