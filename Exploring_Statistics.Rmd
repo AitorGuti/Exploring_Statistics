@@ -96,6 +96,8 @@ Statistics analysis is used to interpret, represent, and extrapolate data and it
 
 ### 1. Bias
 
+Defines how error influences the final results.
+
 **Random Error -**
 
      Uncontrollable error in measurement that varies randomly
@@ -108,5 +110,28 @@ Statistics analysis is used to interpret, represent, and extrapolate data and it
 
 ### 2. Descriptive Statistics
 
+Provides an idea of the differences or similarities between data by defining averages and spread.
+
+Below is a data set of numbers for which we will calculate descriptive statistics. First are the averages, next is the spread.
+
+    -7, 1, 2, 2, 3, 4, 5, 5, 6, 22
+    
+```{r, echo=FALSE}
+#Data Set of -7,1,2,2,3,4,5,5,6,22
+
+#Type
+#Definition of Mean "Measure of Location"
+#Definition of Median
+#Definition of Mode
+
+Type <- c("Description", "Example", "Result")
+Mean <- c("Sum of all of the numbers divided by the number of numbers", "(-7 + 1 + 2 + ... + 22)/10", 4.3)
+Median <- c("Value separating the upper and lower halves", "Mean of 3 and 4", 3.5)
+Mode <- c("Most frequent value in a dataset", "Bimodal", "2 and 5")
+
+location_measure <- data.frame(Type, Mean, Median, Mode)
+
+kable(location_measure)
+```
 
 
