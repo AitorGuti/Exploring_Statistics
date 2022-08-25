@@ -116,14 +116,7 @@ Below is a data set of numbers for which we will calculate descriptive statistic
 
     -7, 1, 2, 2, 3, 4, 5, 5, 6, 22
     
-```{r, echo=FALSE}
-#Data Set of -7,1,2,2,3,4,5,5,6,22
-
-#Type
-#Definition of Mean "Measure of Location"
-#Definition of Median
-#Definition of Mode
-
+```{r, location_measure, echo=FALSE}
 Type <- c("Description", "Example", "Result")
 Mean <- c("Sum of all of the numbers divided by the number of numbers", "(-7 + 1 + 2 + ... + 22)/10", 4.3)
 Median <- c("Value separating the upper and lower halves", "Mean of 3 and 4", 3.5)
@@ -134,4 +127,14 @@ location_measure <- data.frame(Type, Mean, Median, Mode)
 kable(location_measure)
 ```
 
+```{r, spread_measure, echo=FALSE}
+Type <- c("Description", "Example", "Result")
+Range <- c("Difference between the highest and lowest numbers", "22 - (-7)", 29)
+Standard_Deviation <- c("Amount of dispersion from the mean", "", 6.84)
+Interquartile_Range <- c("Difference between the 25th (Q1) and 75th (Q3) percentiles", "Q1 = 2 Q3 = 5", 3.00)
+
+spread_measure <- data.frame(Type, Range, Standard_Deviation, Interquartile_Range)
+
+kable(spread_measure)
+```
 
