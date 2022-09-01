@@ -138,3 +138,4 @@ spread_measure <- data.frame(Type, Range, Standard_Deviation, Interquartile_Rang
 kable(spread_measure)
 ```
 
+### 3. Inferential Statistics
