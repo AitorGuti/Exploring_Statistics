@@ -2,10 +2,12 @@
 title: "Exploring Statistics"
 author: "Aitor Alexander Gutierrez Valero"
 date: "2022-08-16"
-output: 
-  prettydoc::html_pretty:
-    theme: architect
-    highlight: github
+output:
+  md_document:
+    variant: gfm
+  # prettydoc::html_pretty:
+  #   theme: architect
+  #   highlight: github
 ---
 
 ```{r setup, include=FALSE}
